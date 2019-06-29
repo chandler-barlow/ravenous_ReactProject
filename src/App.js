@@ -22,12 +22,17 @@ business,
 business,
 business,
 ];
+function searchYelp(term, location, sortBy){
+  console.log('searching with Pizza, Brooklyn, best_match');
+
+}
+
 function App() {
   return (
   	<div className = "app">
   	<h1>ravenous</h1>
   	<BusinessList businesses = {businesses}/>
-  	<SearchBar/>
+  	<SearchBar searchYelp = {searchYelp}/>
   	</div>
   	);
 }
